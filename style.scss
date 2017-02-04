@@ -1,12 +1,10 @@
 ---
 ---
 
-//
-// IMPORTS
-//
-
+@import "bootstrap";
 @import "reset";
 @import "variables";
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -21,13 +19,6 @@ body {
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -118,6 +109,29 @@ img {
 .date {
   font-style: italic;
   color: $gray;
+}
+
+kbd{
+	display: inline-block;
+    margin: 0 .1em;
+    padding: .1em .6em;
+    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-size: 11px;
+    line-height: 1.4;
+    color: #242729;
+    text-shadow: 0 1px 0 #FFF;
+    background-color: #e1e3e5;
+    border: 1px solid #adb3b9;
+    border-radius: 3px;
+    white-space: nowrap;
+	vertical-align: text-bottom;
+}
+
+.sidebar {
+    width: 238px;
+    .mini-about{
+        font-size: 0.75em;
+    }
 }
 
 // Specify the color of the selection

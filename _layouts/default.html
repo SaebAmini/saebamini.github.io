@@ -1,50 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
     {% include meta.html %}
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
-
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Home</a>
-          </nav>
-        </header>
-      </div>
+</head>
+<body>
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+            <header class="masthead clearfix">
+                <a href="{{ site.baseurl }}/" class="site-avatar hidden-md hidden-lg"><img src="{{ site.avatar }}" /></a>
+                <div class="site-info">
+                    <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+                    <p class="site-description">{{ site.description }}</p>
+                </div>
+                <nav>
+                    <a href="{{ site.baseurl }}/">Home</a>
+                </nav>
+            </header>
+        </div>
     </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+            <div id="main" role="main">
+                {{ content }}
+            </div>
+        </div>
+        <div class="col-sm-2 hidden-xs hidden-sm sidebar">
+            <div class="stackoverflow-profile">
+                <a href="http://stackoverflow.com/users/68080/saeb-amini">
+                    <img src="http://stackoverflow.com/users/flair/68080.png" width="208" height="58" alt="profile for Saeb Amini at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Saeb Amini at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+                </a>
+            </div>
+            <div class="mini-about">
+                <p>
+                    Saeb Amini is a software developer based in Brisbane, AU, specializing in the Microsoft tech stack.
+                </p>
+                <p>
+                    He's a <a href="https://www.scrum.org/Assessments/Certification-Lists?AssessmentName=PSM%20I&l=Amini">certified Scrum Master</a> and is passionate about high-quality, human-readable code and good software craftsmanship practices.
+                </p>
+                <p>
+                    He's worked as an independent consulant for 8 years but since 2016 joined <a href="http://readify.net/">Readify</a> to work alongside brilliant people and deliver outstanding solutions to bigger business problems.
+                </p>
+            </div>
+            <div>
+                {% include svg-icons.html %}
+            </div>
+        </div>
     </div>
-
     <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
+        <div class="container">
+            <footer class="footer"></footer>
+        </div>
     </div>
-
     {% include analytics.html %}
-  </body>
+</body>
 </html>

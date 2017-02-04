@@ -13,4 +13,4 @@ When I finally upgraded from my beloved Visual Studio 2010 to 2013, in the midst
 
 To install the add-in, extract the ZIP file contents to `%USERPROFILE%\Documents\Visual Studio 2013\Addins` and restart Visual Studio.
 
-_Please not that I'm not the author of this add-in, I merely upgraded it for VS 2013._
+_Please note that I'm not the author of this add-in, I merely upgraded it for VS 2013._

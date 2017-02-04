@@ -6,7 +6,7 @@
 name: Saeb Amini
 
 # Short bio or description (displayed in the header)
-description: Senior Developer at Readify
+description: Blog about software development - with some digressions into a software developer's life
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/6758734
@@ -21,13 +21,13 @@ footer-links:
   email:
   facebook:
   flickr:
-  github:
+  github: SaebAmini
   instagram:
   linkedin: saebamini
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter:
-  stackoverflow: users/68080/saeb-amini
+  stackoverflow:
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 

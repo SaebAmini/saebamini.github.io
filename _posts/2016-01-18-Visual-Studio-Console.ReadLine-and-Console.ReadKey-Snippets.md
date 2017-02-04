@@ -5,7 +5,7 @@ title: Visual Studio Console.ReadLine & Console.ReadKey Snippets
 
 Visual Studio [Code Snippets](https://msdn.microsoft.com/en-us/library/ms165392.aspx) are awesome productivity enhancers; I can only imagine how many millions of keystrokes I've saved over the years by making a habit out of using them.
 
-However, not all common pieces of code are available as snippets out of the box. Good examples are `Console.ReadLine` & `Console.ReadKey`. Fortunately, creating them yourself is very easy, just save the following as `.snippet files` and then import them via `Tools > Code Snippet Manager... > Import...`:
+However, not all common pieces of code are available as snippets out of the box. Good examples are `Console.ReadLine` & `Console.ReadKey`. Fortunately, creating them yourself is very easy, just save the following as `.snippet` files and then import them via `Tools > Code Snippet Manager... > Import...`:
 
 Console.ReadLine:
 {% highlight XML %}
@@ -36,7 +36,7 @@ Console.ReadLine:
 </CodeSnippets>
 {% endhighlight %}
 
-Console.ReaadKey:
+Console.ReadKey:
 {% highlight XML %}
 <?xml version="1.0" encoding="utf-8" ?>
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
