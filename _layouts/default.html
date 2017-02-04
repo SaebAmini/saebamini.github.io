@@ -13,42 +13,44 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700">
 </head>
 <body>
-    <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-            <header class="masthead clearfix">
-                <a href="{{ site.baseurl }}/" class="site-avatar hidden-md hidden-lg"><img src="{{ site.avatar }}" /></a>
-                <div class="site-info">
-                    <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-                    <p class="site-description">{{ site.description }}</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <header class="masthead clearfix">
+                    <a href="{{ site.baseurl }}/" class="site-avatar hidden-md hidden-lg"><img src="{{ site.avatar }}" /></a>
+                    <div class="site-info">
+                        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+                        <p class="site-description">{{ site.description }}</p>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <div id="main" role="main">
+                    {{ content }}
                 </div>
-            </header>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-            <div id="main" role="main">
-                {{ content }}
             </div>
-        </div>
-        <div class="col-sm-2 hidden-xs hidden-sm sidebar">
-            <div class="stackoverflow-profile">
-                <a href="http://stackoverflow.com/users/68080/saeb-amini">
-                    <img src="http://stackoverflow.com/users/flair/68080.png" width="208" height="58" alt="profile for Saeb Amini at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Saeb Amini at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-                </a>
-            </div>
-            <div class="mini-about">
-                <p>
-                    Saeb Amini is a software developer based in Brisbane, AU, specializing in the Microsoft tech stack.
-                </p>
-                <p>
-                    He's a <a href="https://www.scrum.org/Assessments/Certification-Lists?AssessmentName=PSM%20I&l=Amini">certified Scrum Master</a> and is passionate about high-quality, human-readable code and good software craftsmanship practices.
-                </p>
-                <p>
-                    He's worked as an independent consulant for 8 years but since 2016 joined <a href="http://readify.net/">Readify</a> to work alongside brilliant people and deliver outstanding solutions to bigger business problems.
-                </p>
-            </div>
-            <div>
-                {% include svg-icons.html %}
+            <div class="col-sm-2 hidden-xs hidden-sm sidebar">
+                <div class="stackoverflow-profile">
+                    <a href="http://stackoverflow.com/users/68080/saeb-amini">
+                        <img src="http://stackoverflow.com/users/flair/68080.png" width="208" height="58" alt="profile for Saeb Amini at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Saeb Amini at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+                    </a>
+                </div>
+                <div class="mini-about">
+                    <p>
+                        Saeb Amini is a software developer based in Brisbane, AU, specializing in the Microsoft tech stack.
+                    </p>
+                    <p>
+                        He's a <a href="https://www.scrum.org/Assessments/Certification-Lists?AssessmentName=PSM%20I&l=Amini">certified Scrum Master</a> and is passionate about high-quality, human-readable code and good software craftsmanship practices.
+                    </p>
+                    <p>
+                        He's worked as an independent consulant for 8 years but since 2016 joined <a href="http://readify.net/">Readify</a> to work alongside brilliant people and deliver outstanding solutions to bigger business problems.
+                    </p>
+                </div>
+                <div>
+                    {% include svg-icons.html %}
+                </div>
             </div>
         </div>
     </div>
