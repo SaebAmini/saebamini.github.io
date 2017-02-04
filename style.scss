@@ -16,9 +16,9 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  background: $white;
+  font: 16px/1.4 $openSans;
+  color: $gray;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -130,7 +130,7 @@ kbd{
 .sidebar {
     width: 238px;
     .mini-about{
-        font-size: 0.75em;
+        font-size: 13px;
     }
 }
 
