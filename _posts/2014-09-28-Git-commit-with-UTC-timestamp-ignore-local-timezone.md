@@ -15,13 +15,11 @@ Commit message here
 	
 If you find it rather unnecessary to include your local timezone in your commits, and would like to commit in UTC time for example, you have two options:
 
-Changing your computer's timezone before doing a commit.
-Using the `--date` commit option to override the author date used in the commit, like this:
+1. Changing your computer's timezone before doing a commit.
+2. Using the `--date` commit option to override the author date used in the commit, like this:
 
-{% highlight YAML %}
-git commit --date=2014-09-28T01:00:00+0000
-{% endhighlight %}
-
+        git commit --date=2014-09-28T01:00:00+0000
+  
 The first option is very inconvenient, changing system's timezone back and forth between UTC and local for commits is just silly, so let's forget about that. The second option however, seems to have potential, but manually inputting the current UTC time for each commit is cumbersome. We're programmers, there's gotta be a better way...
 
 Bash commands and aliases to the rescue! we can use the date command to output the UTC time to an ISO 8601 format which is accepted by git commit's date option:
