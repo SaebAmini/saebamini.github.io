@@ -3,14 +3,17 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+    {% for post in site.posts %}
     <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.content }}
-      </div>
+        <h1>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </h1>
+        <div class="entry">
+            {{ post.content }}
+        </div>
+        <div class="pull-right">
+            <a href="{{ post.url }}#disqus_thread">Comments</a>
+        </div>
     </article>
-  {% endfor %}
+    {% endfor %}
 </div>

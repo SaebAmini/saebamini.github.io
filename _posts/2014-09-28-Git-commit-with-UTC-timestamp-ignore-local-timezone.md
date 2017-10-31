@@ -19,23 +19,23 @@ If you find it rather unnecessary to include your local timezone in your commits
 2. Using the `--date` commit option to override the author date used in the commit, like this:
 
         git commit --date=2014-09-28T01:00:00+0000
-  
+
 The first option is very inconvenient, changing system's timezone back and forth between UTC and local for commits is just silly, so let's forget about that. The second option however, seems to have potential, but manually inputting the current UTC time for each commit is cumbersome. We're programmers, there's gotta be a better way...
 
 Bash commands and aliases to the rescue! we can use the date command to output the UTC time to an ISO 8601 format which is accepted by git commit's date option:
 
-{% highlight YAML %}
+{% highlight CFScript %}
 git commit --date="$(date --utc +%Y-%m-%dT%H:%M:%S%z)"
 {% endhighlight %}
 
 We then alias it to a convenient git command like utccommit:
 
-{% highlight YAML %}
+{% highlight CFScript %}
 git config --global alias.utccommit '!git commit --date="$(date --utc +%Y-%m-%dT%H:%M:%S%z)"'
 {% endhighlight %}
 
 Now whenever we want to commit with a UTC timestamp, we can just:
 
-{% highlight YAML %}
+{% highlight CFScript %}
 git utccommit -m "Hey! I'm committing with a UTC timestamp!"
 {% endhighlight %}

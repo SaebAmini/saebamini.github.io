@@ -25,6 +25,12 @@ code {
     vertical-align: baseline;
     line-height: 1em;
 
+    &.highlight{
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
     code {
         white-space: inherit;
         font-size: 13px;
