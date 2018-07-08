@@ -74,4 +74,4 @@ protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 {% endhighlight %}
 
 
-I believe Languages and frameworks should always make it harder to make mistakes, especially ones like this with potentially devastating consequences, so I strongly disagree with this new default behavior and will be keeping it disabled.
+I believe languages and frameworks should always make it harder to make mistakes, especially ones like this with potentially devastating consequences, so I strongly disagree with this new default behavior and will be keeping it disabled.
