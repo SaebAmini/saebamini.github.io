@@ -3,7 +3,7 @@ layout: post
 title: The dangerous EF Core feature&#58; automatic client evaluation
 ---
 
-Recently when going through our shiny new ASP.NET Core application's [Seq](https://getseq.net/) logs, I accidentally spotted a few entried like this:
+Recently when going through our shiny new ASP.NET Core application's [Seq](https://getseq.net/) logs, I accidentally spotted a few entries like this:
 
 > The LINQ expression 'foo' could not be translated and will be evaluated locally.
 
