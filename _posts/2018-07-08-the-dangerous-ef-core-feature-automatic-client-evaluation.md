@@ -57,7 +57,7 @@ You could argue that it's the developer's fault for including something like `St
 
 Also, having untranslatable things like `StringComparison.OrdinalIgnoreCase` in your query isn't the only culprit that results in client evaluation. If you [have](https://github.com/aspnet/EntityFrameworkCore/issues/6245) too many [joins](https://stackoverflow.com/questions/45237492/ef-core-could-not-be-translated-and-will-be-evaluated-locally) or [groupings](https://github.com/aspnet/EntityFrameworkCore/issues/12255), the query can become too complex for EF Core and make it fall back to local evaluation.
 
-So you probably want to keep an eye on your logs if your EF Core queries are magically working without a hitch as you may be getting client evaluation. Or better yet, if you don't want that unnecessary additional cognitive overhead, disable it altogether and make it throw like the good old Entity Framework:
+So you probably want to keep an eye on your logs if your EF Core queries are magically working without a hitch as you may be getting client evaluation. Or better yet, if you don't want that additional cognitive overhead, disable it altogether and make it throw like the good old Entity Framework:
 
 {% highlight C# %}
 
