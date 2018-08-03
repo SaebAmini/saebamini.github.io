@@ -63,13 +63,22 @@ So you probably want to keep an eye on your logs if your EF Core queries are mag
 
 /* Startup.cs */
 
-protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+public void ConfigureServices(IServiceCollection services)
 {
-	optionsBuilder
-		.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=EFQuerying;Trusted_Connection=True;")
-		.ConfigureWarnings(warnings => warnings.Throw(RelationalEventId.QueryClientEvaluationWarning));
+	services.AddDbContext<YourContext>(optionsBuilder =>
+	{
+		optionsBuilder
+			.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=EFQuerying;Trusted_Connection=True;")
+			.ConfigureWarnings(warnings => warnings.Throw(RelationalEventId.QueryClientEvaluationWarning));
+	});
 }
 
+/* Or in your context's OnConfiguring method */
+
+protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+{
+	optionsBuilder.ConfigureWarnings(warnings => warnings.Throw(RelationalEventId.QueryClientEvaluationWarning));
+}
 
 {% endhighlight %}
 
