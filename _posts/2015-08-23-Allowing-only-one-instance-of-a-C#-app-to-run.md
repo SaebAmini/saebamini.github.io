@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Allowing only one instance of a C# application to run
+title: Allowing Only One Instance of a C# Application to Run
 ---
 
 Making a singleton application, i.e. preventing users from opening multiple instances of your app, is a common requirement which can be easily implemented using a [_Mutex_](https://msdn.microsoft.com/en-us/library/system.threading.mutex(v=vs.110).aspx).

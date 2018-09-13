@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The dangerous EF Core feature&#58; automatic client evaluation
+title: The Dangerous EF Core Feature&#58; Automatic Client Evaluation
 ---
 
 Recently when going through our shiny new ASP.NET Core application's [Seq](https://getseq.net/) logs, I accidentally spotted a few entries like this:

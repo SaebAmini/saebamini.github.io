@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Git&#58; commit with a UTC timestamp and ignore local timezone
+title: Git&#58; Commit with a Utc Timestamp and Ignore Local Timezone
 ---
 
 When you git commit, Git automatically uses your system's local timezone by default, so for example if you're collaborating on a project from Sydney (UTC +10) and do a commit, your commit will look like this in git log for everyone:
