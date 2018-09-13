@@ -258,7 +258,6 @@ nav {
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
-  line-height: 1.75em;
 }
 
 .posts > .post:last-child {
@@ -267,6 +266,7 @@ nav {
 }
 
 .post {
+  line-height: 1.75em;
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
