@@ -1,11 +1,13 @@
 ---
 layout: post
-title: Visual Studio Console.ReadLine & Console.ReadKey Snippets
+title: Create your own visual studio code snippets
 ---
 
 Visual Studio [Code Snippets](https://msdn.microsoft.com/en-us/library/ms165392.aspx) are awesome productivity enhancers; I can only imagine how many millions of keystrokes I've saved over the years by making a habit out of using them.
 
-However, not all common pieces of code are available as snippets out of the box. Good examples are `Console.ReadLine` & `Console.ReadKey`. Fortunately, creating them yourself is very easy, just save the following as `.snippet` files and then import them via `Tools > Code Snippet Manager... > Import...`:
+Although a lot of common code you use daily might not be available out of the box, adding them yourself is very simple.
+
+Here are some samples for creating `Console.ReadLine` & `Console.ReadKey` snippets:
 
 Console.ReadLine:
 {% highlight XML %}
@@ -65,4 +67,6 @@ Console.ReadKey:
 </CodeSnippets>
 {% endhighlight %}
 
-Now you can use them by typing `cr` or `ck` for Console.ReadLine or Console.ReadKey respectively and hitting <kbd>TAB</kbd> twice.
+You can save the above as `.snippet` files and then import them via `Tools > Code Snippet Manager... > Import...` and use them by typing `cr` or `ck` and hitting <kbd>TAB</kbd> twice.
+
+So go ahead and create handy ones for things you find yourself typing all the time. You can refer to this [MSDN article for more details](https://docs.microsoft.com/en-us/visualstudio/ide/walkthrough-creating-a-code-snippet).
