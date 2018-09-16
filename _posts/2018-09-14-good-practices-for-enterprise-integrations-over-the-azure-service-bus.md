@@ -32,7 +32,7 @@ One of the major initial issues I identified with the client's integration, was 
 
 - Scaling and performance. Even if you get the locking right, it won't be nowhere near as performant as a proper message queue for high traffic scenarios. You'll have a high-write, high-read situation (a lot of messages coming in and a lot of polling) which is very hard to optimize a SQL database table for.
 
-- Availability and reliability. A goods messaging platform like ASB, is highly available and redundantly stores your data.
+- Availability and reliability. A good messaging platform like ASB, is highly available and redundantly stores your data.
 
 - Filtering, dead lettering, automatic expiry and a myriad of other features that come with ASB.
 
@@ -169,7 +169,7 @@ These dead-letter queues contribute to the overall used space of the topic, so a
 
 ## 10. Performance is not just a nice-to-have
 
-Having performant message processors ensure your integrations run smoothly and can withstand traffic spikes without your topics getting full. Here are some tips that can increase performance dramatically:
+Having performant message processors ensures your integrations run smoothly and can withstand traffic spikes without your topics getting full. Here are some tips that can increase performance dramatically:
 
 - Use AMQP and avoid HTTP polling. This should be the default if you're using the [new .NET Standard Service Bus Client library](https://github.com/Azure/azure-service-bus-dotnet), you can [read about the benefits here](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-overvie). Also be careful to not use [the old library](https://www.nuget.org/packages/WindowsAzure.ServiceBus) – most of the documentation around still point to that.
 
