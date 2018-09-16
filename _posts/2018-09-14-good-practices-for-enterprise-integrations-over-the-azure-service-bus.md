@@ -171,7 +171,7 @@ These dead-letter queues contribute to the overall used space of the topic, so a
 
 Having performant message processors ensures your integrations run smoothly and can withstand traffic spikes without your topics getting full. Here are some tips that can increase performance dramatically:
 
-- Use AMQP and avoid HTTP polling. This should be the default if you're using the [new .NET Standard Service Bus Client library](https://github.com/Azure/azure-service-bus-dotnet), you can [read about the benefits here](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-overvie). Also be careful to not use [the old library](https://www.nuget.org/packages/WindowsAzure.ServiceBus) – most of the documentation around still point to that.
+- Use AMQP and avoid HTTP polling. This should be the default if you're using the [new .NET Standard Service Bus Client library](https://github.com/Azure/azure-service-bus-dotnet), you can [read about the benefits here](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-overview). Also be careful to not use [the old library](https://www.nuget.org/packages/WindowsAzure.ServiceBus) – most of the documentation around still point to that.
 
 - Use the [asynchronous callback-based message pump API](https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.servicebus.subscriptionclient.registermessagehandler?view=azure-dotnet). Sending/receiving messages to/from the message broker is an inherently IO based asynchronous operation – you shouldn't hold up threads for them.
 
