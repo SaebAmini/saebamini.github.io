@@ -3,7 +3,7 @@ layout: post
 title: Misconceptions Some Programming Common Asynchronous .NET 
 ---
 
-Now that I have my cheesy word-play on the title, to demonstrate [one inherent trait of asynchronous programming](#you-cant-have-concurrency-with-purely-asynchronous-code) out of the way, let's talk about asynchronous programming in C# and .NET and some of the most common misconceptions around it.
+Now that I have my cheesy word-play on the title to demonstrate [an inherent trait of asynchronous programming](#you-cant-have-concurrency-with-purely-asynchronous-code) out of the way, let's talk about asynchronous programming in C# and .NET and some of the most common misconceptions around it.
 
 .NET Programmers have traditionally shied away from writing asynchronous code, and mostly for good reason. Writing asynchronous code used to be [arduous work](https://docs.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm) and the result was [difficult to reason about, debug and maintain](https://docs.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap). That became exacerbated when you threw concurrency into the mix – parallel or asynchronous – as that's harder to consciously follow for our brains which are optimised/trained for non-concurrent and sequential logic.
 
@@ -17,7 +17,7 @@ This has resulted in a trend of more and more asynchronous code popping up in ou
 
 I continue to hear and see many varieties of the above statement and it's the most common misconception in my experience. Overloading of terms like _asynchronous_, _concurrent_ and _parallel_ and using them interchangeably in the industry can take some of the blame, and maybe some of it falls on Tasks being included in the `System.Threading` namespace.
 
-`async` doesn't magically make your code asynchronous. It don't spin up worker threads behind your back either. In fact, it doesn't really do anything other than enabling the use of the `await` keyword in a method. It was only introduced [to not break existing codebases that had used `await` as an identifier and to make `await` usage heuristics simpler](https://blogs.msdn.microsoft.com/ericlippert/2010/11/11/asynchrony-in-c-5-part-six-whither-async/). That's it!
+`async` doesn't magically make your code asynchronous. It don't spin up worker threads behind your back either. In fact, it doesn't really do anything other than enable the use of the `await` keyword in a method. It was only introduced [to not break existing codebases that had used `await` as an identifier and to make `await` usage heuristics simpler](https://blogs.msdn.microsoft.com/ericlippert/2010/11/11/asynchrony-in-c-5-part-six-whither-async/). That's it!
 
 `await` is a bit more complicated and is quite similar to how the `yield` keyword works, in that it yields flow of control back to the caller and creates a state-machine by causing the compiler to register the rest of the async method as a continuation. That continuation is run whenever the awaited task completes. The compiler transforms the below:
 
