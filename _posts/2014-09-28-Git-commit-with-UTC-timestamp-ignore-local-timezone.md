@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Git&#58; Commit with a Utc Timestamp and Ignore Local Timezone
+title: Git&#58; Commit with a UTC Timestamp and Ignore Local Timezone
 ---
 
-When you git commit, Git automatically uses your system's local timezone by default, so for example if you're collaborating on a project from Sydney (UTC +10) and do a commit, your commit will look like this in git log for everyone:
+When you git commit, Git automatically uses your system's local timezone by default, so for example if you're collaborating on a project from Brisbane (UTC +10) and do a commit, your commit will look like this:
 
 {% highlight YAML %}
 commit c00c61e48a5s69db5ee4976h825b521ha5bx9f5d
@@ -20,7 +20,7 @@ If you find it rather unnecessary to include your local timezone in your commits
 
         git commit --date=2014-09-28T01:00:00+0000
 
-The first option is very inconvenient, changing system's timezone back and forth between UTC and local for commits is just silly, so let's forget about that. The second option however, seems to have potential, but manually inputting the current UTC time for each commit is cumbersome. We're programmers, there's gotta be a better way...
+The first option is obviously very inconvenient, changing the system's timezone back and forth between UTC and local for commits is just silly, so let's forget about that. The second option however, seems to have potential, but manually inputting the current UTC time for each commit is cumbersome. We're programmers, there's gotta be a better way...
 
 Bash commands and aliases to the rescue! we can use the date command to output the UTC time to an ISO 8601 format which is accepted by git commit's date option:
 
@@ -28,7 +28,7 @@ Bash commands and aliases to the rescue! we can use the date command to output t
 git commit --date="$(date --utc +%Y-%m-%dT%H:%M:%S%z)"
 {% endhighlight %}
 
-We then alias it to a convenient git command like utccommit:
+We can then alias it to a convenient git command like `utccommit`:
 
 {% highlight CFScript %}
 git config --global alias.utccommit '!git commit --date="$(date --utc +%Y-%m-%dT%H:%M:%S%z)"'
