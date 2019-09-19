@@ -108,7 +108,7 @@ b {
     font-weight: bold;
 }
 
-img {
+img, a.img-link {
     max-width: 100%;
     +em {
         display: block;
