@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+	<title>{% if page.title %}{{ page.title }} – {{ site.name }}{% else %} {{ site.name }} – {{ site.description }}{% endif %}</title>
 	{% include meta.html %}
 
 	<!--[if lt IE 9]>
@@ -75,7 +75,10 @@
 	</div>
 	<div class="wrapper-footer">
 		<div class="container">
-			<footer class="footer"></footer>
+			<footer class="footer">
+				<a href="/feed.xml" class="feed-link">Atom Feed</a>
+				<a href="/sitemap.xml" class="sitemap-link">Sitemap</a>
+			</footer>
 		</div>
 	</div>
 	{% include analytics.html %}
