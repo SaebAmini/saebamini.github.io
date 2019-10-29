@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Misconceptions Some Programming Common Asynchronous .NET 
+title: Misconceptions Some Programming Common Asynchronous .NET
+published: false
 ---
 
 Now that I have my cheesy word-play on the title to demonstrate [an inherent trait of asynchronous programming](#you-cant-have-concurrency-with-purely-asynchronous-code) out of the way, let's talk about asynchronous programming in C# and .NET and some of the most common misconceptions around it.
