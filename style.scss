@@ -315,7 +315,13 @@ nav {
     .read-more {
         text-transform: uppercase;
         font-size: 15px;
-    }
+	}
+	
+	.tip {
+		padding: 1em 2em;
+		background-color: #ffe8c9;
+		border-radius: 0.6em
+	}
 }
 
 .wrapper-footer {
