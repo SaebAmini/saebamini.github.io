@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Misconceptions Some Programming Common Asynchronous .NET
-published: false
+title: Common C# async and await misconceptions
+redirect_from:
+  - /some-common-.net-asynchronous-programming-misconceptions/
 ---
-
-Now that I have my cheesy word-play on the title to demonstrate [an inherent trait of asynchronous programming](#you-cant-have-concurrency-with-purely-asynchronous-code) out of the way, let's talk about asynchronous programming in C# and .NET and some of the most common misconceptions around it.
 
 .NET Programmers have traditionally shied away from writing asynchronous code, and mostly for good reason. Writing asynchronous code used to be [arduous work](https://docs.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm) and the result was [difficult to reason about, debug and maintain](https://docs.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap). That became exacerbated when you threw concurrency into the mix – parallel or asynchronous – as that's harder to consciously follow for our brains which are optimised/trained for non-concurrent and sequential logic.
 
