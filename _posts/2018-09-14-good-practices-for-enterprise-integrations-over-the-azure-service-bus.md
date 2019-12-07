@@ -46,7 +46,7 @@ Treat the root problem, not the symptom.
 
 ## 3. Use shared topics and a [pub-sub pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) instead of queues
 
-Imagine the scenario of updating customer details in a CRM system which should be reflected in the sales system. There's only two systems, so it might be tempting to do something like this:
+Imagine the scenario of updating customer contact details in a CRM system which should be reflected in the sales system. There's only two systems, so it might be tempting to do something like this:
 
 ![Point-to-Point](/images/posts/integrations/p2p_1.png)
 *An exclusive topic/queue for sending a single system's customer update messages, effectively creating a point-to-point integration.*
@@ -135,11 +135,17 @@ Each topic and subscription following a naming convention brings many monitoring
 
 An example of such a convention could be:
 
-| Topic Name                        | Subscription Names       |
-| --------------------------------- | ------------------------ |
-| `YourCompanyName.CustomerUpdated` | `YourCompanyName.CRM`    |
-|                                   | `YourCompanyName.Sales`  |
-|                                   | `YourCompanyName.Legacy` |
+| Topic Name                                      |
+|-------------------------------------------------|
+| `CustomerContactDetailsUpdated` |
+
+
+| Topic Subscription Names |
+|--------------------------|
+| `CRM`    |
+| `Sales`  |
+| `Legacy` |
+
 
 Like most conventions, the value mainly comes from there being one, rather than the convention per se.
 
