@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Code Reviews&#58; An Accurate Window into a Team's Health
-published: false
 ---
 
 Pull requests and code reviews are one of the most powerful software quality tools we have available in our tool-belt.
