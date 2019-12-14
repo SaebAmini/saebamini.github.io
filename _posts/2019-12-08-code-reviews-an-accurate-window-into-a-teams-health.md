@@ -11,7 +11,7 @@ In teams, the benefits are many and more significant: extra pair of eyes are alw
 
 However, this post isn't about those more commonly known benefits; it's about how code reviews are one of the best places to observe and gauge a team's health. I recently thought about this as I was reading the excellent book called ["The Five Dysfunctions of a Team"](https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team), recommended to me by my dear colleague [Mehdi Khalili](https://www.mehdi-khalili.com/).
 
-In the book, Patrick Lencioni talks about the following five core team dysfunctions which build on top of each other. I'll go through them and note how they can be observed in PRs and code reviews.
+In the book, Patrick Lencioni talks about the following five core team dysfunctions which build on top of each other. I'll go through them and note how they can be observed in PRs and code reviews<!--more-->.
 
 ![The Five Dysfunctions of a Team](/images/posts/code-reviews/dysfunctions-pyramid.png)
 

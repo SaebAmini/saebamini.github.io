@@ -13,7 +13,7 @@ Date:   Sun Sep 28 11:00:00 2014 +1000 # <-- your local time and timezone offset
 Commit message here
 {% endhighlight %}
 	
-If you find it rather unnecessary to include your local timezone in your commits, and would like to commit in UTC time for example, you have two options:
+If you find it rather unnecessary to include your local timezone in your commits, and would like to commit in UTC time for example, you have two options<!--more-->:
 
 1. Changing your computer's timezone before doing a commit.
 2. Using the `--date` commit option to override the author date used in the commit, like this:

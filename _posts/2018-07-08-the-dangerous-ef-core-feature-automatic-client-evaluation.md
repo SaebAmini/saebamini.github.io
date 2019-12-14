@@ -9,9 +9,9 @@ Recently when going through our shiny new ASP.NET Core application's logs, I spo
 
 > The LINQ expression 'foo' could not be translated and will be evaluated locally.
 
-Huh?
+Odd.
 
-I dug around in the code and found the responsible queries. Some of them were quite complex with many joins and groupings, while some of the other ones were very simple, like `someStringField.Contains("bar", StringComparison.OrdinalIgnoreCase)`.
+I dug around in the code and found the responsible queries. Some of them were quite complex with many joins and groupings, while some of the other ones were quite simple<!--more-->, like `someStringField.Contains("bar", StringComparison.OrdinalIgnoreCase)`.
 
 You may have spotted the problem right away. `StringComparison.OrdinalIgnoreCase` is a .NET concept. It doesn't translate to SQL and EF Core can't be blamed for that. In fact, if you run the same query in the classic Entity Framework, you'll get a `NotSupportedException` telling you it can't convert your perdicate to a SQL expression and that's a _good_ thing, because it prompts you to review your query and if you _really_ want to have a predicate in your query that only applies in the CLR world, _you_ can decide if it makes sense in your case to do a `ToList()` or similar at some point in your `IQueryable` to pull down the results of your query from the database into memory, or you may decide that you don't need that `StringComparison.OrdinalIgnoreCase` after all, because your database collation is case-insensitive anyway.
 

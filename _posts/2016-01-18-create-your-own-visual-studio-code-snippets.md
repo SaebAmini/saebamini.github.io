@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Create your own visual studio code snippets
+title: Create Your Own Visual Studio Code Snippets
 ---
 
 Visual Studio [Code Snippets](https://msdn.microsoft.com/en-us/library/ms165392.aspx) are awesome productivity enhancers; I can only imagine how many millions of keystrokes I've saved over the years by making a habit out of using them.
 
-Although a lot of common code you use daily might not be available out of the box, adding them yourself is very simple.
+Although a lot of common code you use daily might not be available out of the box, adding them yourself is very simple<!--more-->.
 
 Here are some samples for creating `Console.ReadLine` & `Console.ReadKey` snippets:
 

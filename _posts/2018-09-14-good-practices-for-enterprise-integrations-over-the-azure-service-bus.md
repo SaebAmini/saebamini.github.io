@@ -7,7 +7,7 @@ Integrating systems over a good messaging infrastructure has many benefits if do
 
 Many of these benefits are vast topics on their own. But the point of this article is to go over some of the pitfalls when implementing large-scale integrations over a messaging infrastructure and guidelines for avoiding them.
 
-These are based on my learning from a recent project which involved improving a client's existing integration between 5+ large systems. While the messaging infrastructure in use was the Azure Service Bus, I believe most of these points apply to all other message-based integrations and service buses.
+These are based on my learning from a recent project which involved improving a client's existing integration between 5+ large systems. While the messaging infrastructure in use was the Azure Service Bus, I believe most of these points apply to all other message-based integrations and service buses<!--more-->.
 
 
 ## 1.  Don't roll your own

@@ -9,7 +9,7 @@ layout: default
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </h1>
         <div class="entry">
-            {{ post.content }}
+            {{ post.content | split:'<!--more-->' | first | append: "…"}} <em><a href="{{ site.baseurl }}{{ post.url }}">Read more</a></em>
         </div>
         <div class="pull-right">
             <a href="{{ post.url }}#disqus_thread">Comments</a>

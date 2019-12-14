@@ -3,7 +3,7 @@ layout: post
 title: Modeling PowerToys for Visual Studio 2013
 ---
 
-I rarely use tools that generate code, however, one that has become a fixed asset of my programming toolbox is Visual Studio's class designer. It's a great productivity tool that helps you quickly visualize and understand the class structure of projects, classes and class members. It's also great for presentation of code-base that does not come with a UI, e.g. a Class Library.
+I rarely use tools that generate code, however, one that has become a fixed asset of my programming toolbox is Visual Studio's class designer. It's a great productivity tool that helps you quickly visualize and understand the class structure of projects, classes and class members. It's also great for presentation of code-base that does not come with a UI, e.g. a Class Library<!--more-->.
 
 It also lets you quickly wire-frame your classes when doing [top-down design](https://en.wikipedia.org/wiki/Top-down_and_bottom-up_design), but it is limited in that aspect, for example it does not support [Auto-Implemented Properties](http://msdn.microsoft.com/en-us/library/bb384054.aspx), which I tend to almost always use in my Types, instead it blurts out a verbose Property declaration along with a backing field. Fortunately, almost all of these issues are fixed with the great [Modeling PowerToys](http://modeling.codeplex.com/) Visual Studio add-in by Lie which turns Class Designer into an amazing tool.
 

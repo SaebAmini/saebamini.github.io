@@ -9,7 +9,7 @@ redirect_from:
 
 The compiler magic of `async/await` since C# 5.0 and the [Task-based Asynchronous Pattern](https://docs.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap) has immensely improved that experience, mainly by abstracting asynchronous code to read like synchronous code. In fact it's been such a big hit that it's spread and [been adopted by many other popular languages such as JavaScript, Dart, Python, Scala and C++](https://en.wikipedia.org/wiki/Futures_and_promises#History).
 
-This has resulted in a trend of more and more asynchronous code popping up in our code-bases. That's mostly a good thing, because leveraging asynchrony _in the right place_ can lead to significant performance and scalability improvements. However, with all great magic, comes great misconception. I'll go over some of the most common ones below which I encounter often.
+This has resulted in a trend of more and more asynchronous code popping up in our code-bases. That's mostly a good thing, because leveraging asynchrony _in the right place_ can lead to significant performance and scalability improvements. However, with all great magic, comes great misconception. I'll go over some of the most common ones below which I encounter often<!--more-->.
 
 ## `async/await` means multi-threading
 

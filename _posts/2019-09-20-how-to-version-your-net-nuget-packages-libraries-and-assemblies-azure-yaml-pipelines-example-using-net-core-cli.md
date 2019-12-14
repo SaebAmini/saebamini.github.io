@@ -7,7 +7,7 @@ I often see arbitrary patterns used for versioning packages and assemblies, espe
 
 However, if you plan to release a public NuGet package, or an internal package that could be heavily used, you'll be making your life, and your users' lives a lot easier, and avoid creating a "dependency hell", if you distinguish between the above versions and follow a meaningful versioning strategy like [Semantic Versioning](https://semver.org/).
 
-If you haven't heard about Semantic Versioning, here's the TL;DR:
+If you haven't heard about Semantic Versioning, here's the TL;DR<!--more-->:
 
 - It solves the problems of _version lock_, the inability to upgrade a package with minor changes and bug fixes without having to release new versions of every dependent package, and _version promiscuity_, the inability to safely upgrade a package with breaking changes without automatically breaking dependent packages.
 
