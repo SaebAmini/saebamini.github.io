@@ -158,10 +158,10 @@ kbd {
 .sidebar {
     width: 223px;
     padding-right: 0;
+}
 
-    .mini-about {
-        font-size: 13px;
-    }
+.about-me {
+	font-size: 13px;
 }
 
 // Specify the color of the selection
@@ -315,13 +315,13 @@ nav {
     .read-more {
         text-transform: uppercase;
         font-size: 15px;
-	}
-	
-	.tip {
-		padding: 1em 2em;
-		background-color: #ffe8c9;
-		border-radius: 0.6em
-	}
+    }
+
+    .tip {
+        padding: 1em 2em;
+        background-color: #ffe8c9;
+        border-radius: 0.6em
+    }
 }
 
 .wrapper-footer {
@@ -333,22 +333,31 @@ nav {
 
 footer {
     padding: 20px 0;
-	text-align: center;
-	font-size: 0.8em;
-	
-	.feed-link {
-		background-image: url('/images/assets/atom.svg');
-		background-size: contain;
-		background-repeat: no-repeat;
-		padding-left: 2em;
-	}
+    text-align: center;
+    font-size: 0.8em;
 
-	.sitemap-link {
-		margin-left: 1em;
-		background-image: url('/images/assets/sitemap.png');
-		background-size: contain;
-		background-repeat: no-repeat;
-		padding-left: 2em;
+    .feed-link {
+        background-image: url('/images/assets/atom.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-left: 2em;
+    }
+
+    .sitemap-link {
+        margin-left: 1em;
+        background-image: url('/images/assets/sitemap.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-left: 2em;
+    }
+}
+
+.post-about {
+	margin-top: 2em;
+	font-size: 13px;
+	
+	.stackoverflow-profile {
+		text-align: center;
 	}
 }
 

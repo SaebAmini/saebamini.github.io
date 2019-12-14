@@ -21,8 +21,6 @@
 		<div class="row">
 			<div class="col-xs-10 col-xs-offset-1 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-7">
 				<header class="masthead clearfix">
-					<a href="{{ site.baseurl }}/" class="site-avatar hidden-md hidden-lg"><img
-							src="{{ site.avatar }}" /></a>
 					<div class="site-info">
 						<h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
 						<p class="site-description">{{ site.description }}</p>
@@ -37,39 +35,7 @@
 				</div>
 			</div>
 			<div class="col-sm-2 hidden-xs hidden-sm sidebar">
-				<div class="stackoverflow-profile">
-					<a href="https://stackoverflow.com/users/68080/saeb-amini">
-						<img src="https://stackoverflow.com/users/flair/68080.png" width="208" height="58"
-							alt="profile for Saeb Amini at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
-							title="profile for Saeb Amini at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-					</a>
-				</div>
-				<div class="mini-about">
-					<p>
-						Saeb Amini is a software consultant, C♯ and .NET aficionado, occasional public speaker, newbie
-						gardener, casual fisherman,
-						camping enthusiast and <a
-							href="https://www.scrum.org/Assessments/Certification-Lists?AssessmentName=PSM%20I&l=Amini">certified
-							PSM I</a> based in Brisbane, AU. He's passionate about high-quality, human-readable code
-						and good software craftsmanship practices.
-					</p>
-					<p>
-						He's been a software consulant for more than 10 years, the last 3 of which has been at <a
-							href="https://readify.net/">Readify</a>, where he's currently a Senior Consultant.
-					</p>
-					<p>
-						Being a consultant exposes Saeb to a wide variety of challenges, both technical and
-						non-technical, and results in diverse and invaluable learning. This blog's main purpose is to
-						serve as a self-reminder of what he's learned during his work, but if it happens to help you
-						too, that's even better!
-					</p>
-					<p>
-						Saeb is tired of talking about himself in the third person.
-					</p>
-				</div>
-				<div class="text-center">
-					{% include svg-icons.html %}
-				</div>
+				{% include aboutme.html %}
 			</div>
 		</div>
 	</div>
