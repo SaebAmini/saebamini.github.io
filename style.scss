@@ -157,7 +157,8 @@ kbd {
 
 .sidebar {
     width: 223px;
-    padding-right: 0;
+	padding-right: 0;
+	margin-top: 3em;
 }
 
 .about-me {
@@ -196,13 +197,26 @@ kbd {
 //
 // .masthead
 //
+
+.header-intro {
+	background: url('/images/assets/saeb-ddd-cover-wide.jpg') no-repeat center bottom;
+	background-size: cover;
+	height: 600px;
+
+	@include tablet {
+		height: 400px;
+    }
+
+	@include mobile {
+		height: 400px;
+    }
+}
+
 .wrapper-masthead {
     margin-bottom: 50px;
 }
 
 .masthead {
-    padding: 20px 0;
-    border-bottom: 1px solid $lightGray;
 
     @include mobile {
         text-align: center;
@@ -236,23 +250,46 @@ kbd {
     }
 }
 
+.masthead {
+	padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
 .site-name {
-    margin: 0;
-    color: $darkGray;
+	margin: 0;
+    color: #333;
     cursor: pointer;
-    font-family: $helveticaNeue;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 300;
     font-size: 28px;
     letter-spacing: 1px;
 }
 
 .site-description {
-    margin: -5px 0 0 0;
-    color: $gray;
+	margin: -5px 0 0 0;
+    color: #666;
     font-size: 16px;
+}
 
-    @include mobile {
-        margin: 3px 0;
+.welcome-header {
+	margin: 1.5em 0 0;
+    color: #FFF;
+    font-family: $helveticaNeue;
+    font-weight: 300;
+    font-size: 5em;
+	letter-spacing: 1px;
+	text-shadow: 0px 0px 5px #000;
+
+	span {
+		white-space: nowrap;
+	}
+	
+	@include tablet {
+        font-size: 4em;
+	}
+	
+	@include mobile {
+        font-size: 3em;
     }
 }
 

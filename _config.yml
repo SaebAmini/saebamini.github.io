@@ -88,3 +88,11 @@ exclude:
   - CNAME
 
 repository: https://github.com/SaebAmini/saebamini.github.io
+
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      isPost: true # automatically set is_post=true for all posts
