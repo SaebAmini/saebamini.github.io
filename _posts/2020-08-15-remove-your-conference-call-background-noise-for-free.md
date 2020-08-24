@@ -54,4 +54,4 @@ Having [a decent microphone](https://www.bluemic.com/en-us/products/yeti-nano/) 
 
 
 
-That's it. There's no excuse for you to continue sharing your neighbour's lawnmower sound with everyone on the call!
+That's it. There's no excuse for you to continue sharing the sound of your computer fan, AC and your neighbour's great taste in music with everyone on the call!
