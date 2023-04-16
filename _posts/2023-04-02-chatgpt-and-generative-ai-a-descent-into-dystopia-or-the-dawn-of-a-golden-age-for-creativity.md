@@ -17,9 +17,9 @@ Consider this: throughout history, we've made tools to help us do things faster 
 
 The Industrial Revolution. Remember that? I don't either. But picture a time when machines started replacing a huge amount of manual labour. Some jobs, like blacksmiths and weavers, were replaced by machines. Instead, factory jobs were born. The world didn't end (although, it probably became much less sustainable, but we digress). Humans adapted, became more productive, and moved on.
 
-   > "The only constant in life is change." – Heraclitus
+   > "It is not the strongest of the species that survives, nor the most intelligent; it is the one most responsive to change." - Charles Darwin
 
-The telephone. You know, that thing that Gen Z probably have only seen footage of in the movies and consider a pre-historic artifact. It changed the game for communication. While telegraph operators became a thing of the past, call center, infrastructure, technician, and unfortunately, telemarketing jobs were created.
+The telephone. You know, that thing that Gen Z probably have only seen footage of in the movies and consider a pre-historic artifact. It changed the game for communication. While telegraph operators became a thing of the past, call center, infrastructure, technician, and telemarketing (unfortunately) jobs were created.
 
   ![Call center agents - a new profession](/images/posts/2023-04-chatgpt/call-center.jpg)
 
@@ -27,7 +27,7 @@ The telephone. You know, that thing that Gen Z probably have only seen footage o
 
    > "Invention is the mother of necessity." – Marshall McLuhan
 
-While there have been some negative aspects to our technological advancements, they have for the most part forced us to evolve, discover new possibilities, and focus on higher-value work. More time to work on solving actual problems instead of fighting with your tools to do what you want? Sold!
+There are many more examples here like the introduction of electricity, the printing press, and automobiles. While there have been some negative aspects to our technological advancements, they have for the most part forced us to evolve, discover new possibilities, and focus on higher-value work. More time to work on solving actual problems instead of fighting with your tools to do what you want? Sold!
 
 I think the biggest downside to watch out for with AI is confirmation bias. As AI systems like ChatGPT are trained on vast amounts of data, they tend to reflect the patterns and biases present in that data. This can inadvertently lead to the creation of an echo chamber, where AI simply reinforces average or even false information instead of generating truly novel or accurate insights. This is even more insidious as AI systems can present information with confidence and assertiveness, making it sound plausible and legitimate. This could lead to the proliferation of misinformation, as people might be more inclined to trust the AI-generated content without questioning its validity.
 
